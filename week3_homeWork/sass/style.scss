@@ -1,0 +1,152 @@
+@import "reset";
+@import "color";
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navBar {
+  background-color: $primary-color;
+  font-size: 20px;
+  .navWrap {
+    display: flex;
+    justify-content: space-between;
+    .nav-logo {
+      background: {
+        image: url("../images/logo-new_工作區域 1.png");
+        position: center center;
+        repeat: no-repeat;
+      }
+      width:80px;
+      height:100%;
+      text-indent: -999em;
+      margin-left: 64px;
+    }
+    .nav-list {
+      display: flex;
+      justify-content: flex-end;
+      .nav-list-item {
+        // border:1px solid green;
+        margin-top: 40px;
+        margin-right: 64px;
+        margin-bottom: 40px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  height: 840px;
+  color: $secondary-color;
+  font-weight: 500;
+  background: {
+    image: url("../images/68.png");
+    position: center center;
+    size: cover;
+  }
+  .banner-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .banner-title {
+      text-align: right;
+      h3 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 64px;
+      }
+    }
+  }
+}
+
+.section-title {
+  padding-top: 64px;
+  padding-bottom: 60px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.pro-section {
+  background: {
+    color: $bg-color;
+  }
+  .section-title {
+    color: $secondary-color;
+  }
+}
+
+.pro-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .pro-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    // border: 1px solid #ccc;
+    margin-bottom: 80px;
+    width: 23.5%;
+    .item-icon-dollar,
+    .item-icon-clock,
+    .item-icon-heart,
+    .item-icon-glasses {
+      width: 100%;
+      height: 100px;
+      background: {
+        position: center center;
+        repeat: no-repeat;
+      }
+    }
+    h3 {
+      color: $secondary-color;
+      font-size: 24px;
+      padding-top: 40px;
+    }
+    p {
+      text-align: justify;
+      padding: 0 37px;
+    }
+  }
+}
+
+.item-icon-dollar {
+  background-image: url("../images/iconfinder_circle-dollar_430089.svg");
+}
+.item-icon-clock {
+  background-image: url("../images/iconfinder_clock-1_430090.svg");
+}
+.item-icon-heart {
+  background-image: url("../images/iconfinder_heart_430099.svg");
+}
+.item-icon-glasses {
+  background-image: url("../images/iconfinder_glasses_430098\ \(1\).svg")
+}
+
+.classic-section {
+  .section-title {
+    color: $secondary-color;
+  }
+}
