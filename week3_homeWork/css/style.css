@@ -53,6 +53,10 @@ table {
   height: 100%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -232,5 +236,61 @@ h1, h2, h3, h4, h5, h6 {
 
 .classic-section .section-title {
   color: #650300;
+}
+
+.classic-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.classic-list .classic-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.classic-list .classic-list-item .item-img {
+  width: 66%;
+  margin-right: 2%;
+  margin-bottom: 2rem;
+}
+
+.classic-list .classic-list-item h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #aa0601;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.classic-list .classic-list-item:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.classic-list .classic-list-item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.classic-list .classic-list-item:last-child {
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

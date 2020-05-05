@@ -150,3 +150,35 @@ h1, h2, h3, h4, h5, h6 {
     color: $secondary-color;
   }
 }
+
+.classic-list {
+  display: flex;
+  flex-wrap: wrap;
+  .classic-list-item {
+    display: flex;
+    flex-wrap: nowrap;
+    .item-img {
+      width: 66%;
+      margin-right: 2%;
+      margin-bottom: 2rem;
+    }
+    h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $classic-color;
+      font-size: 48px;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .classic-list-item:nth-child(odd) {
+    flex-direction: row;
+  }
+  .classic-list-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .classic-list-item:last-child {
+    margin-bottom: 3rem;
+  }
+}
