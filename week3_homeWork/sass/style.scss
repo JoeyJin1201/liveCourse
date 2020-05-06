@@ -22,6 +22,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 12px;
 }
 
+.contact-container {
+  max-width: 816px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .navBar {
   background-color: $primary-color;
   font-size: 20px;
@@ -82,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  padding-top: 64px;
+  padding-top: 4rem;
   padding-bottom: 60px;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -107,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-content: center;
     // border: 1px solid #ccc;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     width: 23.5%;
     .item-icon-dollar,
     .item-icon-clock,
@@ -180,5 +187,47 @@ h1, h2, h3, h4, h5, h6 {
   }
   .classic-list-item:last-child {
     margin-bottom: 3rem;
+  }
+}
+
+.recommend-section {
+  .section-title {
+    color: $secondary-color;
+  }
+  .recommend-list {
+    display: flex;
+    justify-content: space-between;
+    .recommend-list-item {
+      border: 1px solid rgba(222, 226, 230, 1);
+      width: 23.5%;
+      margin-bottom: 5rem;
+      .name { 
+        font-weight: 500;
+      }
+      .name, 
+      .content, 
+      .upsate-time  {
+        padding: 1rem 0 0 1rem;
+      }
+      .update-time {
+        color: rgba(112, 112, 112, 1);
+        line-height: 21px;
+        padding: 1rem 0 1rem 1rem;
+      }
+    }
+  }
+}
+
+.contact-section {
+  background: {
+    color: $bg-color;
+  }
+  .section-title {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+  }
+  .contact {
+    font-size: 20px;
+    padding-bottom: 1.25rem;
   }
 }

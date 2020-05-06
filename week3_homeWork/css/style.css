@@ -78,6 +78,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 12px;
 }
 
+.contact-container {
+  max-width: 816px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .navBar {
   background-color: #aa0601;
   font-size: 20px;
@@ -156,9 +163,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  padding-top: 64px;
+  padding-top: 4rem;
   padding-bottom: 60px;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -193,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   width: 23.5%;
 }
 
@@ -292,5 +299,54 @@ h1, h2, h3, h4, h5, h6 {
 
 .classic-list .classic-list-item:last-child {
   margin-bottom: 3rem;
+}
+
+.recommend-section .section-title {
+  color: #650300;
+}
+
+.recommend-section .recommend-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend-section .recommend-list .recommend-list-item {
+  border: 1px solid #dee2e6;
+  width: 23.5%;
+  margin-bottom: 5rem;
+}
+
+.recommend-section .recommend-list .recommend-list-item .name {
+  font-weight: 500;
+}
+
+.recommend-section .recommend-list .recommend-list-item .name,
+.recommend-section .recommend-list .recommend-list-item .content,
+.recommend-section .recommend-list .recommend-list-item .upsate-time {
+  padding: 1rem 0 0 1rem;
+}
+
+.recommend-section .recommend-list .recommend-list-item .update-time {
+  color: #707070;
+  line-height: 21px;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.contact-section {
+  background-color: rgba(170, 6, 1, 0.05);
+}
+
+.contact-section .section-title {
+  color: black;
+  font-weight: 600;
+}
+
+.contact-section .contact {
+  font-size: 20px;
+  padding-bottom: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
