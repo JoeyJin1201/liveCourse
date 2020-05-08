@@ -113,9 +113,95 @@
       <div class="contact-container">
         <p class="section-title">聯絡我們</p>
         <p class="contact">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+        <form>
+          <div class="form-item">
+            <label for="contact-name">姓名</label>
+            <input type="text" id="contact-name" placeholder="陳小明">
+          </div>
+          <div class="form-item">
+            <label for="contact-tel">聯絡電話</label>
+            <input type="tel" id="contact-tel" placeholder="0912-345-678">
+          </div>
+          <div class="form-item">
+            <label for="contact-email">電子郵件</label>
+            <input type="email" id="contact-email" placeholder="example@email.com">
+          </div>
+          <div class="form-item">
+            <label for="contact-suggestion">意見反應</label>
+            <textarea id="contact-suggestion" cols="19" rows="4" placeholder="請輸入您的意見"></textarea>
+          </div>
+          <label class="form-agree">
+            <input type="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的 方式處理自己的資料。
+            <span class="contact-agree-box"></span>
+          </label>
+          <input class="text-regular" type="submit" value="確認送出">
+        </form>
       </div>
     </section>
   </main>
-  <footer class="container"></footer>
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="footer-div">
+        <ul class="footer-nav">
+          <li class="footer-nav-item">
+            <a href="#" class="text-white">首頁</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="text-white">系列鏡框</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="text-white">門市據點</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="text-white">部落格</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="text-white">常見問題</a>
+          </li>
+        </ul>
+        <ul class="footer-icon">
+          <li class="footer-icon-item">
+            <a href="#" class="text-white">
+              <img src="/images/ic_social_fb.svg" alt="">
+            </a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="#" class="text-white">
+              <img src="/images/ic_social_ig.svg" alt="">
+            </a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="#" class="text-white">
+              <img src="/images/ic_social_line.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info-wrap">
+          <p>
+            <img src="images/ic_phone_48px.svg" alt="">
+            <span>0800-000-000</span>
+          </p>
+          <p>
+            <img src="images/ic_mail_outline_24px.svg" alt="">
+            <span>glasses@business.com</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-bottom-ul">
+          <li>
+            <img src="/images/logo-new_工作區域 1.png" alt="">
+            <span>Copyright © 2020 Glasses.All rights reserved.</span>
+          </li>
+        </ul>
+        <ul class="footer-last-ul">
+          <li>隱私權政策</li>
+          <li>服務條款</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
