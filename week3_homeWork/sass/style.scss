@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-container {
-  max-width: 816px;
+  max-width: 66.67%;
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   .pro-list-item {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +202,9 @@ h1, h2, h3, h4, h5, h6 {
       border: 1px solid rgba(222, 226, 230, 1);
       width: 23.5%;
       margin-bottom: 5rem;
+      img {
+        width: 100%;
+      }
       .name { 
         font-weight: 500;
       }
@@ -283,6 +286,9 @@ h1, h2, h3, h4, h5, h6 {
       height: 3rem;
       margin-left: 1rem;
       margin-right: 1rem;
+      img {
+        width: 100%;
+      }
     }
     .footer-icon-item:last-child {
       margin-right: 1.625rem;
@@ -335,4 +341,87 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1200px) {
+  .classic-list {
+    .classic-list-item {
+      h3{
+        font-size: 28px;
+        margin: 0 auto;
+      }
+    }
+    .classic-list-item:nth-child(even) {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 806px) {
+  .pro-list {
+    justify-content: space-evenly;
+    .pro-list-item {
+      width: 41%;
+    }
+  }
+  .classic-list {
+    .classic-list-item {
+      h3{
+        font-size: 28px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .recommend-section {
+    .recommend-list {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .recommend-list-item {
+        width: 43%;
+      }
+    }
+  }
+  .footer-div {
+    .footer-nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .footer-nav-item {
+        padding-right: 1.625rem;
+        padding-left: 1.625rem;
+      }
+    }
+    .footer-icon {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .footer-icon-item {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+  .footer-info {
+    .footer-info-wrap {
+      p {
+        margin-bottom: 11px;
+      }
+      img {
+        width: 23px;
+      }
+      span {
+        margin-left: 12px;
+        font-size: 20px;
+      }
+    }
+  }
+  .footer-bottom {
+    .footer-bottom-ul {
+      img {
+        display: none;
+      }
+      span {
+        margin-left: 0;
+      }
+    }
+  }
 }
